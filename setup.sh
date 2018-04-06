@@ -33,6 +33,8 @@ if [ -d "${WORKSPACE}/vendor" ] ; then
   cp -rf ${WORKSPACE}/vendor/* "${BUILDENV}/vendor/"
 fi
  
+export MAGENTO_DIR=${BUILDENV}
+echo ${MAGENTO_DIR}
 #cd ${BUILDENV}/htdocs
 #${BUILDENV}/bin/phpunit --colors -d display_errors=1
 
