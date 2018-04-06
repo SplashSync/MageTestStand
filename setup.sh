@@ -22,11 +22,10 @@ if [ -z $WORKSPACE ] ; then
   exit
 fi
  
-mkdir /tmp/magetest 
 BUILDENV="/tmp/magetest"
+mkdir /tmp/magetest 
  
 echo "Using build directory ${BUILDENV}"
-
 
 git clone https://github.com/SplashSync/MageTestStand.git "${BUILDENV}" -b travis
 cp -rf "${WORKSPACE}" "${BUILDENV}/.modman/"
