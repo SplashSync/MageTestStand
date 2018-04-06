@@ -23,7 +23,7 @@ if [ -z $WORKSPACE ] ; then
 fi
  
 mkdir /tmp/magetest 
-BUILDENV=`/tmp/magetest`
+BUILDENV="/tmp/magetest"
  
 echo "Using build directory ${BUILDENV}"
 
