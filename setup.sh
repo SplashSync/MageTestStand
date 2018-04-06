@@ -26,7 +26,7 @@ BUILDENV=`mktemp -d /tmp/mageteststand.XXXXXXXX`
  
 echo "Using build directory ${BUILDENV}"
  
-git clone https://github.com/SplashSync/MageTestStand.git "${BUILDENV}"
+git clone https://github.com/SplashSync/MageTestStand.git "${BUILDENV}" -b travis
 cp -rf "${WORKSPACE}" "${BUILDENV}/.modman/"
 ${BUILDENV}/install.sh
 if [ -d "${WORKSPACE}/vendor" ] ; then
