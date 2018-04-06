@@ -22,7 +22,8 @@ if [ -z $WORKSPACE ] ; then
   exit
 fi
  
-BUILDENV=`mkdir /tmp/magetest`
+mkdir /tmp/magetest 
+BUILDENV=`/tmp/magetest`
  
 echo "Using build directory ${BUILDENV}"
 
